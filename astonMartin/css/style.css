@@ -1,0 +1,392 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Gentium Book Basic';
+    src:url(../fonts/GenBkBasBI.woff)
+}
+
+/* reset, common=============================================================*/
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {text-decoration: none; color:#fff; display: inline-block;}
+label, span {display:inline-block;}
+body, input, button, select {background:#000; color:#fff; font-family: arial;}
+.blind{display:none;}
+/* header ====================================================================*/
+header {
+  position: fixed; top:0; left:0; width:100%; z-index: 3;background:#000;
+}
+.top-menu {position: relative; z-index: 1; height:120px; }
+header form {display:none;}
+h1{width:200px; margin: 0 auto; padding-top: 20px;}
+h1 img {width:100%;}
+.menu-close{
+  position: absolute; top:37px; left:40px;
+}
+.menu-close input {display:none;}
+.btn-menu{position: relative; width:40px; height:40px; cursor:pointer;}
+.btn-menu span {
+    position: absolute; top:0;
+    width:40px; height:6px;
+    background:#fff; border-radius: 2px;
+    transform-origin:-4px 3px;
+    transition: 0.2s;
+}
+.btn-menu span:nth-child(2) {top:50%; margin-top:-3px;}
+.btn-menu span:nth-child(3) {bottom:0; top:auto;}
+#btn-menu:checked + label span:nth-child(1) {transform: rotate(45deg);}
+#btn-menu:checked + label span:nth-child(2) {opacity: 0;}
+#btn-menu:checked + label span:nth-child(3) {transform: rotate(-45deg);}
+.bg{position: absolute; width: 100%; height: 120px; top:0; left:0;}
+.btn-search {
+    position: absolute;
+    top:45px; right:45px;
+    width:30px; height:30px; border:none;
+    font-size:30px; line-height:30px; cursor:pointer;
+}
+header > form > .wrap > .row {position: absolute; top:40px; right:40px; z-index: 3;}
+header > form > .wrap > .row > input {
+    background:#595958;
+    width:220px; height:40px; border:#595958;
+}
+header > form > .wrap > .row > .search {
+    position: absolute; top:0; right:5px;
+    width:40px; height:40px; border:none; background:#595958;
+    font-size:30px; line-height:30px; cursor:pointer;
+
+}
+
+/* 네비게이션 */
+nav {
+    position: fixed; top:0; padding-top: 120px;
+    height: 100%;
+    width:100%;  display:none;
+}
+.gnb {background:#000;}
+.gnb > li {text-align:center; line-height:100px;}
+.gnb > li > a {font-size:40px;}
+.gnb > li > a > i { font-size:35px; margin-left:30px; cursor: pointer;}
+.gnb > li > ul {display:none;}
+.sub-menu {font-size:25px; line-height:50px;}
+.sub-menu > a:hover { color:rgba(255, 255, 255, 0.712);}
+
+.mobile-close {display:none;}
+.enquiry {
+  position: fixed;
+  top:45px; right:100px;
+  font-size:25px; display:none;
+}
+.enquiry:hover {text-decoration: underline;}
+
+
+
+/* section ================================================================= */
+
+/* swiper */
+.at1 { margin-top:120px;}
+.swiper-container {width:100%;}
+.swiper-slide img {width:100%;}
+.swiper-slide .text-area {
+  position: absolute; width: 40%; top:60%; 
+  transform: translateY(-60%); padding-left: 5%;
+}
+.ta {text-align:center;}
+.swiper-slide .text-area p{font-family: 'Gentium Book Basic'; font-size: 100px;}
+.swiper-slide .text-area button {
+  font-size:16px; margin-top: 20px; padding: 10px 20px;
+  background:#333; border:2px solid #595958; cursor:pointer;
+}
+.swiper-slide.right .text-area{right:0; bottom:20%;  text-align: center; padding-right: 10%;}
+.swiper-slide button:hover {background:#000; font-weight:500;}
+.swiper-slide.right button{background:#f4c39e; border:2px solid #f4a56a;}
+.swiper-slide.right button:hover{background:#f68028;}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {bottom: 25px;}
+.swiper-pagination-bullet {
+    width: 150px; height: 7px;
+    margin:0 10px !important;
+    border-radius: 5px;
+    background:#595958; opacity: 1;
+}
+.swiper-pagination-bullet-active {background:#a8a8a8;}
+
+/*  MODELS */
+.at2 {position: relative;}
+.at2 h2 { font-size:50px; text-align:center; margin:100px auto;}
+.at2 .cars img { width:100%;}
+.at2 .models li{position: relative;}
+.at2 .models li a { width:100%;}
+.at2 .models li:last-child a{display: table; box-sizing: border-box; padding: 20px;}
+.at2 .models li a span {position: relative; margin:30px 0 0 25px; font-size:20px; padding-left: 18px;}
+.at2 .models li a span i{position: absolute; left: 0; top: -5px; font-size:30px; transition: 0.5s;}
+.at2 .models li a span:hover {text-decoration: underline;}
+.at2 .models li a span:hover i{transform: rotate(360deg);}
+.at2 .models .discover{transition: background 0.5s; text-align: center; margin: 20px; border: 10px double #fff;display: table-cell; vertical-align: middle;}
+.at2 .models li:last-child a:hover .discover{background: #999; }
+.at2 .models .discover i { font-size:40px; animation: move 1s linear infinite;}
+.at2 .models .discover p {margin-top:20px; font-size:18px;}
+@keyframes move {
+    from { transform:translate(-30px,0)}
+    to { transform:translate(30px,0)}
+}
+
+/* come with aston martin */
+.at3 {padding-top:200px; width:100%;}
+.at3 .mb{margin-bottom: 50px;}
+.at3 h2 { font-size:50px; text-align:center; margin:200px auto;}
+.at3 .wrap{position: relative; background-repeat: no-repeat; background-size: cover; background-position: center; margin: 0 25px; opacity:0; transition:0.5s;}
+.at3 .box1{background-image:url(../img/brand2.jpg);
+  /* padding-top: calc(700/500*100%); */
+}
+.at3 .box2{background-image:url(../img/owners2.jpg); padding-top: calc(325/800*100%); margin-bottom: 50px;}
+.at3 .box3{background-image:url(../img/world_of_aston_martin.jpg); padding-top: calc(325/800*100%);}
+.at3 .box4{background-image:url(../img/qby3.jpg);
+  /* padding-top: calc(700/500*100%); */
+}
+.at3 .box5{background-image:url(../img/corporate.jpg);
+  /* padding-top: calc(325/500*100%); */
+    margin-bottom: 50px;
+}
+.at3 .box6{background-image:url(../img/timeless.jpg);
+  /* padding-top: calc(325/500*100%); */
+}
+.at3 .box7{background-image:url(../img/shop.jpg);
+  /* padding-top: calc(700/600*100%); */
+}
+.at3 .box8{background-image:url(../img/vulcan2.jpg);
+  /* padding-top: calc(325/700*100%); */
+    margin-bottom: 50px;
+}
+.at3 .box9{background-image:url(../img/dealer2.jpg);
+  /* padding-top: calc(325/700*100%); */
+}
+
+.over { position: absolute; top:0; width:100%; height:100%; background:rgb(63, 62, 62, 0.7); opacity: 0; transition: 0.5s;}
+.over:hover {opacity: 1;}
+.over p {position:absolute; top:30%;  transform: translateY(-30%); width:100%; font-size:30px; text-align:center;}
+.over span {
+    position: absolute; bottom:25%; left:50%; transform: translateX(-50%);
+    width:100px; height:35px; cursor:pointer; text-align:center;
+    background:#333; border:2px solid #595958;  font-size:25px; line-height:35px;
+}
+.over span:hover { background:#a8a8a8;}
+.box1 > .over > p {left:50%; transform:translate(-50%,0);}
+
+/* 위로가기 버튼 */
+aside{position: fixed; bottom:20px; right:10px; width:60px; height:60px; text-align:center; z-index:2; }
+aside a {transition:0.8s;}
+aside a i {font-size:40px;}
+aside a span {width:100%; font-size:15px;;}
+
+/* footer */
+footer {text-align:center;}
+.footer-logo { height:100px; margin-top:100px;}
+.footer-logo img {height:100%;}
+.sns { margin-top:100px;}
+.sns > li { display:inline-block;  font-size:30px; margin:0 10px;}
+.sns > li > a:hover {color: #a8a8a8;}
+.info { margin:150px 0 50px;}
+.info > li { display:inline-block; margin: 0 10px; }
+.info > li > a:hover {color:#a8a8a8;}
+small {display:block; margin-bottom:20px;}
+
+/* pop-up */
+.pop-up-mask {position:fixed;}
+.pop-up { position: absolute; top:0; width:100%; height:100%; overflow-y:auto; background:#000; z-index:4; display:none; text-align:center;}
+.pop-up select, input[type=text] {border:1px solid #fff; box-sizing: border-box; height: 50px; width: 100%;}
+.title-area {height:120px;}
+.title-area h2 { margin:40px 0; font-size:40px;}
+.title-area h3 {margin-top:100px; font-size:30px;}
+.title-area h4 {margin-top:50px; font-size:25px;}
+.title-area p { font-size:20px; letter-spacing: 4px;}
+.title-area .pop-up-close {position: absolute; top:60px; left:6%; width:60px; height:60px; border:none; cursor:pointer;}
+.title-area .pop-up-close i {font-size:50px;}
+
+.pop-up form {position: relative; top:50px; width:100%;}
+.pop-box { width:90%; margin-left:5%; border-top:1px solid #a8a8a8;}
+.pop-box .row{margin: 100px 0; overflow: hidden;}
+.pop-box .group{float: left; width: 35%;}
+.pop-box .group-one{margin: 0 12.5%;}
+.pop-box .group:nth-child(1){margin:0 5% 0 12.5%;}
+.pop-box .group .w50{float: left; width: 50%;}
+.checkbox_group { margin:100px 0;}
+.checkbox_group label { font-size:20px; display:inline-block; margin: 0 5px;}
+.checkbox_group label > input {width:50px; height:50px; vertical-align:middle; margin-right: 10px;}
+
+.btn-area{ width:90%; margin-left:5%; margin-top: 100px;  border-top: 1px solid #a8a8a8;}
+.inquiry{ width:200px; height:50px; font-size:20px; margin:100px 0; border:1px solid #fff;}
+.inquiry:hover {background:#595958; cursor:pointer;}
+
+/* 미디어 쿼리 ========================================================================================================================================*/
+
+/*모바일*/
+@media screen and (max-width:767px){
+
+    h1 {width:120px; padding-top:35px; padding-left:10px;}
+    .bg {height:100%; background:rgb(20, 20, 20, 0.7); z-index:2; position:fixed; overflow: hidden;}
+    .menu-close{top:43px; left:25px;}
+    .btn-menu{width:25px; height:25px;}
+    .btn-menu span { width:25px; height:3px; transform-origin:-3px 2px;}
+    .btn-menu span:nth-child(2){margin-top:-2px;}
+    .btn-search {top:40px; right:25px; width:25px; height:25px; font-size:26px; line-height:30px;}
+    header > form > .wrap > .row {top:230px; left:15%; }
+    header > form > .wrap > .row > input {top:220px; width:270px; padding-top:3px;}
+    header > form > .wrap > .row > .search {right: 10px; padding-top: 3px;height: 43px; font-size: 25px; line-height: 25px;}
+    .mobile-close {
+        display:block;
+        position:absolute; top:300px; left:30%; z-index:3;
+        width:150px; height:30px;  border:1px solid #fff; color:#fff;
+    }
+
+    nav { background:#000;}
+    .gnb { background:#000;}
+    .gnb > li {text-align:left; line-height:60px;}
+    .gnb > li > a {margin-left:10px; font-size:15px;}
+    .gnb > li > a > i { font-size:12px;  margin-left:30px; cursor: pointer;}
+    .sub-menu {margin-left:10px;font-size:10px; line-height:40px;}
+    .enquiry {right:20px; font-size:13px;}
+    .enquiry::after {display:block;}
+
+    .swiper-slide .text-area p{font-family: 'Gentium Book Basic'; font-size: 20px;}
+    .swiper-slide .text-area button{font-size: 10px; margin-top: 5px; padding: 5px;}
+    .swiper-pagination-bullet {width:50px; height:3px; }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:10px;}
+
+    .at2 h2 {font-size:25px; margin: 50px auto;}
+    .at2 > .models > .row > li > a > span {font-size:12px; padding-left:15px;}
+    .at2 > .models > .row > li > a > span i {font-size:20px;}
+    .at2 > .models > .row > li:last-child > {width:100%;}
+
+    .at3 { padding-top:50px;}
+    .at3 h2 {font-size:25px; margin:100px auto;}
+    .at3 .wrap{margin: 0 5px;}
+    .at3 .box2, .at3 .box5, .at3 .box8{margin-bottom: 10px;}
+    .at3 .mb{margin-bottom: 10px;}
+    .over p {font-size:11px;}
+    .over > a > span { bottom:15%; width:40px; height:15px; font-size:10px; line-height:15px;}
+
+    aside {right:-5px;}
+    aside a i {width:100%; font-size:30px; }
+    aside a  span {width:100%; font-size:10px;;}
+
+    footer {text-align:left;}
+    .footer-logo {height:70px; text-align:center;}
+    footer h2{font-size:25px; margin-top:50px; margin-left:20px;}
+    .sns {margin-top:30px; padding-left:20px;}
+    .sns > li { font-size:26px; margin:0 6px;}
+    .info { margin-top:100px;}
+    .info > li {font-size:18px; display:block; line-height: 30px; margin: 0 0 0 20px;}
+    footer > p {text-align:center; margin-top:30px; font-size:13px;}
+    small { text-align:center; margin-top:10px; font-size:12px;}
+
+    .title-area h2 {margin-top:60px;font-size:30px;}
+    .title-area h3 {font-size:20px; }
+    .title-area h4 {font-size:17px; }
+    .title-area p {font-size:18px;letter-spacing:1px;}
+    .title-area .pop-up-close {width:40px; height:40px; top:90px;}
+    .title-area .pop-up-close i {font-size:35px;}
+    .pop-up select, input[type=text]{margin-bottom:50px;}
+    .pop-box {width:100%; margin-left:0; padding-top: 50px;}
+    .pop-box .row{margin: 0;}
+    .pop-box .group{float: left; width: 90%; margin-left: 5%;}
+    .pop-box .group-one{margin:0 0 0 5%; width: 90%;}
+    .pop-box .group:nth-child(1){margin:0 0 0 5%;}
+    .pop-box .group .w50{width: 100%;}
+
+    .checkbox_group {display: inline-block; margin:97px 0; text-align:left;}
+    .checkbox_group label { display: block; font-size:10px; margin-left:0;margin-bottom:30px;}
+    .checkbox_group label > input {width:40px; height:40px;}
+    .inquiry {width:150px; height:40px; font-size:18px; margin:50px 0;}
+}
+
+/*테블릿*/
+@media screen and (min-width:768px) and (max-width:991px) {
+  h1 {width:170px; padding-top:28px;}
+  .bg{height:100%;position: fixed; overflow: hidden; z-index: 2;background:rgb(20, 20, 20, 0.9);}
+  .menu-close {top:40px; left:40px;}
+  .btn-search { top:42px;font-size:36px; line-height:25px;}
+  header > form > .wrap > .row {top:330px; left:30%; }
+  header > form > .wrap > .row > input {top:220px; width:300px; padding-top:3px;}
+  header > form > .wrap > .row > .search {right: 35%; height: 43px; font-size: 25px; line-height: 25px;}
+  .mobile-close {
+      display:block;
+      position:absolute; top:400px; left:38%; z-index:3; font-size:15px;
+      width:200px; height:40px;  border:1px solid #fff; color:#fff;
+  }
+
+  nav { background:rgb(20, 20, 20, 0.7);}
+  .gnb > li {text-align:left;}
+  .gnb > li > a {margin-left:20px; font-size:25px;}
+  .gnb > li > a > i { font-size:18px;  margin-left:30px;}
+  .sub-menu {margin-left:-40px;font-size:15px; line-height:40px;}
+  .enquiry {position:relative; top:0; left:0; width:66.5%; padding: 32px 0px 20px 27px; font-size:20px;background:#000;}
+  .enquiry::after {display:block; width:10px; left:12%;}
+
+  .swiper-slide .text-area p{font-family: 'Gentium Book Basic'; font-size: 40px;}
+  .swiper-pagination-bullet{width: 80px; height: 5px;}
+
+  .at2 h2 {font-size:40px;}
+  .at2 .models li a span {font-size:17px; padding-left:20px;}
+  .at2 .models li a span i {font-size:27px;}
+
+  .at3 { padding-top:50px;}
+  .at3 h2 {font-size:40px; margin:100px auto;}
+  .over p { font-size:16px; width:180px; left:50%; transform:translateX(-50%);}
+  .over span { bottom:15%; width:60px; height:25px; font-size:15px; line-height:25px;}
+  .box3 > .over > a > span {bottom:10%;}
+
+  footer {text-align:left;}
+  .footer-logo {height:80px; text-align:center;}
+  footer h2{font-size:30px; margin-top:70px; margin-left:5%;}
+  .sns {margin-top:20px; padding-left:30px;}
+  .sns > li { font-size:30px; margin:0 12px;}
+  .info { margin-top:100px; padding-left:20px;}
+  .info > li {font-size:20px; display:block; line-height: 30px;}
+  footer > p {text-align:center; margin-top:30px; font-size:17px;}
+  small { text-align:center; margin-top:10px; font-size:15px;}
+
+  .title-area h2 {width:130px; margin-left:40%; margin-top:60px; font-size:40px;}
+  .title-area h3 {font-size:35px;}
+  .title-area h4 {font-size:27px;}
+  .title-area p {width:230px;font-size:25px; margin-left:31%; letter-spacing:1px; padding-left:45px;}
+  .title-area .pop-up-close {width:60px; height:60px; top:75px;}
+  .title-area .pop-up-close i {font-size:45px;}
+  .pop-box {width:100%; margin-left:0;}
+
+  .checkbox_group {margin:100px 0;}
+  .checkbox_group label { font-size:11px;}
+  .checkbox_group label > input {width:40px; height:40px;}
+  .inquiry {width:160px; font-size:18px; margin:50px 0;}
+}
+
+/* 작은 데스크탑 */
+@media screen and (min-width:992px) and (max-width:1199px) {
+    h1 {width:190px; padding-top:25px;}
+    .menu-close{top:40px;}
+    .btn-search { top:40px; right:45px; font-size:40px;}
+    header > form > .wrap > .row {right:30px;}
+    header > form > .wrap > .row > input {height:45px;}
+    header > form > .wrap > .row > .search {top:2px; font-size:40px;}
+
+    .gnb > li > a {font-size:30px;}
+    .gnb > li > a > i { font-size:25px;}
+    .sub-menu {font-size:20px;}
+
+    .swiper-slide .text-area p{font-family: 'Gentium Book Basic'; font-size: 60px;}
+
+    .at3 { padding-top:100px;}
+    .at3 h2 {font-size:45px; margin:200px auto;}
+    .over p { font-size:25px; width:255px; left:50%; transform:translateX(-50%);}
+    .over > a > span { bottom:15%;width:80px; height:25px; font-size:25px; line-height:25px;}
+    .box3 > .over > a > span {bottom:10%;}
+
+    footer h2{display: none;}
+    footer .footer-logo { height:90px; margin-top:200px;}
+    footer .info > li { margin: 0 30px 25px 30px; font-size:18px;}
+    footer p {margin-top:50px;}
+
+    .checkbox_group label { font-size:18px;}
+    .checkbox_group label > input {width:40px; height:40px;}
+}
+
+@media screen and (min-width:1200px){
+  footer h2{display: none;}
+}

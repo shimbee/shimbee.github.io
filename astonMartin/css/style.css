@@ -86,8 +86,8 @@ nav {
 .swiper-container {width:100%;}
 .swiper-slide img {width:100%;}
 .swiper-slide .text-area {
-  position: absolute; width: 40%; top:60%; 
-  transform: translateY(-60%); padding-left: 5%;
+  position: absolute; width: 40%; top:55%; 
+  transform: translateY(-55%); padding-left: 5%;
 }
 .ta {text-align:center;}
 .swiper-slide .text-area p{font-family: 'Gentium Book Basic'; font-size: 100px;}
@@ -95,7 +95,7 @@ nav {
   font-size:16px; margin-top: 20px; padding: 10px 20px;
   background:#333; border:2px solid #595958; cursor:pointer;
 }
-.swiper-slide.right .text-area{right:0; bottom:20%;  text-align: center; padding-right: 10%;}
+.swiper-slide.right .text-area{right:0; bottom:30%;  text-align: center; padding-right: 10%;}
 .swiper-slide button:hover {background:#000; font-weight:500;}
 .swiper-slide.right button{background:#f4c39e; border:2px solid #f4a56a;}
 .swiper-slide.right button:hover{background:#f68028;}
@@ -246,7 +246,7 @@ small {display:block; margin-bottom:20px;}
     .enquiry::after {display:block;}
 
     .swiper-slide .text-area p{font-family: 'Gentium Book Basic'; font-size: 20px;}
-    .swiper-slide .text-area button{font-size: 10px; margin-top: 5px; padding: 5px;}
+    .swiper-slide .text-area button{font-size: 10px; margin-top: 5px; padding: 5px; display:none;}
     .swiper-pagination-bullet {width:50px; height:3px; }
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:10px;}
 

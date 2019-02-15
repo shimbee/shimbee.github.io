@@ -159,7 +159,7 @@ nav {
   /* padding-top: calc(325/700*100%); */
 }
 
-.over { position: absolute; top:0; width:100%; height:100%; background:rgb(63, 62, 62, 0.7); opacity: 0; transition: 0.5s;}
+.over { position: absolute; top:0; width:100%; height:100%; background:rgba(63, 62, 62, 0.7); opacity: 0; transition: 0.5s;}
 .over:hover {opacity: 1;}
 .over p {position:absolute; top:30%;  transform: translateY(-30%); width:100%; font-size:30px; text-align:center;}
 .over span {
@@ -190,7 +190,7 @@ small {display:block; margin-bottom:20px;}
 
 /* pop-up */
 .pop-up-mask {position:fixed;}
-.pop-up { position: fixed; top:0; width:100%; height:100%; overflow-y:auto; background:#000; z-index:4; display:none; text-align:center;}
+.pop-up { position: absolute; top:0; width:100%; height:100%; overflow-y:auto; background:#000; z-index:4; display:none; text-align:center;}
 .pop-up select, input[type=text] {border:1px solid #fff; box-sizing: border-box; height: 50px; width: 100%;}
 .title-area {height:120px;}
 .title-area h2 { margin:40px 0; font-size:40px;}
@@ -221,7 +221,7 @@ small {display:block; margin-bottom:20px;}
 @media screen and (max-width:767px){
 
     h1 {width:120px; padding-top:35px; padding-left:10px;}
-    .bg {height:100%; background:rgb(20, 20, 20, 0.7); z-index:2; position:fixed; overflow: hidden;}
+    .bg {height:100%; background:rgba(20, 20, 20, 0.7); z-index:2; position:fixed; overflow: hidden;}
     .menu-close{top:43px; left:25px;}
     .btn-menu{width:25px; height:25px;}
     .btn-menu span { width:25px; height:3px; transform-origin:-3px 2px;}
@@ -300,7 +300,7 @@ small {display:block; margin-bottom:20px;}
 /*테블릿*/
 @media screen and (min-width:768px) and (max-width:991px) {
   h1 {width:170px; padding-top:28px;}
-  .bg{height:100%;position: fixed; overflow: hidden; z-index: 2;background:rgb(20, 20, 20, 0.9);}
+  .bg{height:100%;position: fixed; overflow: hidden; z-index: 2;background:rgba(20, 20, 20, 0.9);}
   .menu-close {top:40px; left:40px;}
   .btn-search { top:42px;font-size:36px; line-height:25px;}
   header > form > .wrap > .row {top:330px; left:30%; }
@@ -312,7 +312,7 @@ small {display:block; margin-bottom:20px;}
       width:200px; height:40px;  border:1px solid #fff; color:#fff;
   }
 
-  nav { background:rgb(20, 20, 20, 0.7);}
+  nav { background:rgba(20, 20, 20, 0.7);}
   .gnb > li {text-align:left;}
   .gnb > li > a {margin-left:20px; font-size:25px;}
   .gnb > li > a > i { font-size:18px;  margin-left:30px;}

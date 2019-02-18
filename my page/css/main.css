@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bungee Shade';
+    src:url(../fonts/BungeeShade-Regular.woff);
+}
+@font-face {
+    font-family: 'Boogaloo';
+    src:url(../fonts/Boogaloo-Regular.woff);
+}
+
+/* reset, common  ===================================================*/
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {text-decoration: none; display: inline-block;}
+.blind{display:none;}
+/*header =========================================================*/
+header { width:100%; height:100px; position:fixed; background:#000; z-index: 100;}
+nav {font-family: 'Boogaloo'; }
+nav h2 { height:50%; font-size:40px; margin:25px 0; margin-left:20px; color:#fff;}
+.gnb {position: absolute; top:50%; transform: translateY(-50%); right:0;}
+.gnb li {float:left; margin-right:50px; font-size:25px;}
+.gnb li a {color:#fff;}
+.gnb li a.active {color:aqua;}
+article {height:100vh;}
+.home {background:peachpuff;}
+.about-me {background:aquamarine;}
+.skill {background:pink;}
+.skill-chart {padding: 10px 50px; text-align: center; }
+.chart {position: relative; display: inline-block; margin: 20px 100px; font-size: 14px; text-align: center;}
+.chart canvas {position: absolute; top: 0; left: 0;}
+.portfolio {background:cornflowerblue;}
+.contact {background:plum;}
+#map {width:45%; height:70%;}

@@ -47,11 +47,15 @@ $(function(){
         animate: 500
     });
 
-    $(function() {
-        $("#map").googleMap({
-            zoom: 10, // Initial zoom level (optional)
-            coords: [37.491015, 127.100066], // Map center (optional)
-            type: "ROADMAP" // Map type (optional)
-        });
-    })
+
 })
+
+
+function initMap() {
+    var uluru = {center:new google.maps.LateLng(37.490953, 127.100166),zoom:5,};
+    var map = new google.maps.Map(document.getElementById('map'),uluru);
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+}

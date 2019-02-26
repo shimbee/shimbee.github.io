@@ -11,9 +11,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>
-    <script type="text/javascript" src="js/jquery.googlemap.js"></script>
     <script src="js/main.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPLbiNFoMZmQfW7um2nWtx8o5sd8t7fYQ&callback=initMap"></script> -->
+    
 </head>
 <body>
     <header>
@@ -47,7 +47,7 @@
 
         </article>
         <article class="contact">
-            <div id=map></div>
+            <div id="map"></div>
         </article>
     </section>
     <aside>
@@ -56,5 +56,20 @@
     <footer>
 
     </footer>
+
+    <script>
+    function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+     <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPLbiNFoMZmQfW7um2nWtx8o5sd8t7fYQ&callback=initMap">
+     </script>
 </body>
 </html>

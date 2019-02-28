@@ -119,7 +119,7 @@ nav {
 .at2 .models li a span i{position: absolute; left: 0; top: -5px; font-size:30px; transition: 0.5s;}
 .at2 .models li a span:hover {text-decoration: underline;}
 .at2 .models li a span:hover i{transform: rotate(360deg);}
-.at2 .models .discover{transition: background 0.5s; text-align: center; margin: 20px; border: 10px double #fff;display: table-cell; vertical-align: middle;}
+.at2 .models .discover{transition: 0.5s; text-align: center; margin: 20px; border: 10px double #fff;display: table-cell; vertical-align: middle;}
 .at2 .models li:last-child a:hover .discover{background: #999; }
 .at2 .models .discover i { font-size:40px; animation: move 1s linear infinite;}
 .at2 .models .discover p {margin-top:20px; font-size:18px;}

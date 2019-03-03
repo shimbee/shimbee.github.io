@@ -34,6 +34,7 @@ nav h2 {
 /*section===========================================================*/
 section{position: relative;}
 article{width: 100%; position: relative; top: 0;}
+.intro {padding-top:60px;}
 .bg img {width:100%}
 .intro_txt {color:#fff; font-family: 'Boogaloo',cursive; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
 .intro h2 { font-size:150px;}

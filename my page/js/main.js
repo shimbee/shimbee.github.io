@@ -1,5 +1,6 @@
 $(function(){
     var windowH=$(window).height();
+    var windowW=$(window).width();
     $('nav a').click(function(e){
         e.preventDefault();
         var i=$('nav a').index(this);
@@ -11,48 +12,37 @@ $(function(){
     }) 
     
     $('.click').on('click',function(){
-        $('html').stop().animate({'scrollTop':980},1000)
+        $('html').stop().animate({'scrollTop':windowH},1000)
     })
 
     $(window).on('scroll',function(){
         var scrollTop=$(window).scrollTop();
-        //var portfolioH=$('.portfolio').height();
-        //var contactsH=$('.contacts').height();
         var i=0;
-        if(scrollTop>=0 && scrollTop<1*windowH){//intro구간 범위
-            i=0;
-        }else if(scrollTop>=1*windowH && scrollTop<2*windowH){//about-me구간 범위
-            i=1;
-        }else if(scrollTop>=2*windowH && scrollTop<3*windowH){//portfolio구간 범위
-            i=2;
-        }else if(scrollTop=4*windowH){//contacts구간 범위
-            i=3;
+        if (windowW>768){ //pc
+            if(scrollTop>=0 && scrollTop<1*windowH){//intro구간 범위
+                i=0;
+            }else if(scrollTop>=1*windowH && scrollTop<2*windowH){//about-me구간 범위
+                i=1;
+            }else if(scrollTop>=2*windowH && scrollTop<3*windowH){//portfolio구간 범위
+                i=2;
+            }else if(scrollTop=4*windowH){//contacts구간 범위
+                i=3;
+            }
+        }else { //mobile
+            if(scrollTop>=0 && scrollTop<0.35*windowH){//intro구간 범위
+                i=0;
+            }else if(scrollTop>=0.35*windowH && scrollTop<3.5*windowH){//about-me구간 범위
+                i=1;
+            }else if(scrollTop>=3.5*windowH && scrollTop<7.5*windowH){//portfolio구간 범위
+                i=2;
+            }else if(scrollTop=7.5*windowH){//contacts구간 범위
+                i=3;
+            }
         }
         $('nav li a').removeClass();
         $('nav li a').eq(i).addClass('active');
         }).scroll(); 
 
-
-
-    /*$('article').on('mousewheel',function(e, delta){
-        if(delta>0){
-            if($(this).prev().is('article')){
-                var prev=$(this).prev().offset().top;
-                $('html').stop().animate({
-                    scrollTop:prev
-                },1000)
-                //console.log('올림', prev);
-                }
-            }else if(delta<0){
-                if($(this).next().is('article')){
-                var next=$(this).next().offset().top;
-                $('html').stop().animate({
-                    scrollTop:next
-                },1000)
-                //console.log('내림', next);
-                }
-            }
-            }) */
 
     $('.chart_html').easyPieChart({
         scaleColor: false,

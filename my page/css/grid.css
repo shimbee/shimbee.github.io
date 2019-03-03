@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .row{overflow: hidden;}
-[class*="col-"]{float: left; width: 100%;}
+[class*="col-"]{float:left; width: 100%;}
 
 /* 모바일환경 */
 @media screen and (max-width:767px) {

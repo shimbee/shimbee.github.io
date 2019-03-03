@@ -16,6 +16,8 @@ $(function(){
 
     $(window).on('scroll',function(){
         var scrollTop=$(window).scrollTop();
+        //var portfolioH=$('.portfolio').height();
+        //var contactsH=$('.contacts').height();
         var i=0;
         if(scrollTop>=0 && scrollTop<1*windowH){//intro구간 범위
             i=0;
@@ -32,7 +34,7 @@ $(function(){
 
 
 
-    $('article').on('mousewheel',function(e, delta){
+    /*$('article').on('mousewheel',function(e, delta){
         if(delta>0){
             if($(this).prev().is('article')){
                 var prev=$(this).prev().offset().top;
@@ -50,7 +52,7 @@ $(function(){
                 //console.log('내림', next);
                 }
             }
-            })
+            }) */
 
     $('.chart_html').easyPieChart({
         scaleColor: false,
@@ -58,7 +60,7 @@ $(function(){
         lineCap: 'butt',
         barColor: '#f86300',
         trackColor:	"#ecf0f1",
-        size: 160,
+        size: 130,
         animate: 500
     });
     $('.chart_css').easyPieChart({
@@ -67,7 +69,7 @@ $(function(){
         lineCap: 'butt',
         barColor: '#4facfe',
         trackColor:	"#ecf0f1",
-        size: 160,
+        size: 130,
         animate: 500
     });
     $('.chart_js').easyPieChart({
@@ -76,7 +78,7 @@ $(function(){
         lineCap: 'butt',
         barColor: '#fee140',
         trackColor:	"#ecf0f1",
-        size: 160,
+        size: 130,
         animate: 500
     });
     $('.chart_jq').easyPieChart({
@@ -85,7 +87,7 @@ $(function(){
         lineCap: 'butt',
         barColor: '#2a5298',
         trackColor:	"#ecf0f1",
-        size: 160,
+        size: 130,
         animate: 500
     });
 

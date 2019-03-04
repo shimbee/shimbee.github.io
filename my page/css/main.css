@@ -82,7 +82,10 @@ article{width: 100%; position: relative; top: 0;}
 .explain-txt {margin-top:5%;}
 .explain-txt li {font-size:14px;}
 .p-left{padding-left:3%;}
-.btn {border:none; margin-top:30%; background:#000; border-radius: 3px; color:#fff; width:150px;  height:25px; line-height:25px; cursor: pointer;}
+.btn {
+    border:none; margin-top:30%;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    border-radius: 3px; color:#fd255b; width:150px;  height:25px; line-height:25px; cursor: pointer;}
 /*contact========================================================*/
 .contacts{background: url(../img/contact_bg.jpg); background-size: cover; background-repeat: no-repeat; margin-top:100px; height:80vh; color:#fff;}
 .info-box{ position: relative; top:10%; left:50%; transform: translateX(-50%); background:rgba(224, 222, 222, 0.3); width:40%; height:50%; }

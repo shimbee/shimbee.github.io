@@ -85,12 +85,14 @@ $(function(){
         var imgH=$('.pic img').height();
         var picH=$('.pic').height();
         var transi=imgH-picH;
-        $('.portfolio .pic').on({mouseenter:function(){
-            $(this).children('img').css('marginTop',-transi);
-            },mouseleave:function(){
-            $(this).children('img').css('marginTop',0);
-            }
-        });
+        if (windowW>1024){
+            $('.portfolio .pic').on({mouseenter:function(){
+                $(this).children('img').css('marginTop',-transi);
+                },mouseleave:function(){
+                $(this).children('img').css('marginTop',0);
+                }
+            });
+        }
     }).resize();
     
     $('aside').css('opacity','0');

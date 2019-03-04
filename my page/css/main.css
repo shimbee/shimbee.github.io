@@ -36,7 +36,7 @@ section{position: relative;}
 article{width: 100%; position: relative; top: 0;}
 .intro {padding-top:60px;}
 .bg img {width:100%}
-.intro_txt {color:#fff; font-family: 'Boogaloo',cursive; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); text-align:center;}
+.intro_txt { width:100%; color:#fff; font-family: 'Boogaloo',cursive; position: absolute; top:50%; transform: translateY(-50%); text-align:center;}
 .intro h2 { font-size:150px;}
 .intro span {width:100%; display:inline-block; letter-spacing: 3px; font-size:50px; }
 .click { position:absolute; bottom:10%; left:50%; transform: translateX(-50%);  color:#fff; text-align:center;}
@@ -123,7 +123,8 @@ footer i {display: block; text-align:center;  color:#fff; font-size:13px;}
     .intro_txt {top:60%;}
     .intro h2 {font-size:40px;}
     .intro span {font-size:20px;}
-    .click{display:none;}
+    .click{bottom:7%;}
+    .click i {font-size:25px;}
 
     .about-me h2 {margin-top:5%; font-size:25px;}
     .about-me  .about-group { margin:0px auto;}

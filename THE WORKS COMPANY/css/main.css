@@ -82,8 +82,8 @@ article {position: relative; top:0; left:0;}
 .news .news-group .wrap:nth-child(4) {border-bottom:1px solid rgba(224, 223, 223, 0.8);}
 .news .news-group .wrap a  .pic {width:190px; margin:20px 0; padding-left:10%;}
 .news .news-group .wrap a .pic img {width:100%}
-.news .news-group .wrap a .news-txt {position: absolute; top:0; left:60%; transform: translateX(-60%); width:70%; height:100%; margin:0 15%;}
-.news .news-group .wrap a .news-txt h4 {font-size:20px; margin-top:3%;}
+.news .news-group .wrap a .news-txt {position: absolute; top:0; left:60%; transform: translateX(-60%); width:70%; height:100%; margin:0 15%; cursor: text;}
+.news .news-group .wrap a .news-txt h4 {font-size:20px; margin-top:3%; display: inline-block; cursor: pointer;}
 .news .news-group .wrap a .news-txt h4:hover {
     background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
     -webkit-background-clip:text;

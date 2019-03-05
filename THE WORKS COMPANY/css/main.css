@@ -100,7 +100,7 @@ article {position: relative; top:0; left:0;}
 /*slide2*/
 .slide2 {padding-top:10%;}
 .slide2 .swiper-container {width:100%; height:450px;}
-.slide2 .swiper-slide {background-position: center; background-size: cover;}
+.slide2 .swiper-slide img  {width:100%; height:100%;}
 /*footer=================================================================*/
 footer {position: relative; height:150px; color:#fff; background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); background-blend-mode: multiply;}
 footer h1 {width:88px; padding-top:20px; padding-left:19%;}

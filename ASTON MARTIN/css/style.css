@@ -39,7 +39,7 @@ h1 img {width:100%;}
     width:30px; height:30px; border:none;
     font-size:30px; line-height:30px; cursor:pointer;
 }
-header > form > .wrap > .row {position: absolute; top:40px; right:40px; z-index: 3;}
+header > form > .wrap > .row {position: absolute; top:40px; right:40px; z-index: 4;}
 header > form > .wrap > .row > input {
     background:#595958;
     width:220px; height:40px; border:#595958;

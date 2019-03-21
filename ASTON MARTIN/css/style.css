@@ -12,16 +12,12 @@ label, span {display:inline-block;}
 body, input, button, select {background:#000; color:#fff; font-family: arial;}
 .blind{display:none;}
 /* header ====================================================================*/
-header {
-  position: fixed; top:0; left:0; width:100%; z-index: 3;background:#000;
-}
+header { position: fixed; top:0; left:0; width:100%; z-index: 3;background:#000;}
 .top-menu {position: relative; z-index: 1; height:120px; }
 header form {display:none;}
 h1{width:200px; margin: 0 auto; padding-top: 20px;}
 h1 img {width:100%;}
-.menu-close{
-  position: absolute; top:37px; left:40px;
-}
+.menu-close{ position: absolute; top:37px; left:40px;}
 .menu-close input {display:none;}
 .btn-menu{position: relative; width:40px; height:40px; cursor:pointer;}
 .btn-menu span {
@@ -36,7 +32,7 @@ h1 img {width:100%;}
 #btn-menu:checked + label span:nth-child(1) {transform: rotate(45deg);}
 #btn-menu:checked + label span:nth-child(2) {opacity: 0;}
 #btn-menu:checked + label span:nth-child(3) {transform: rotate(-45deg);}
-.bg{position: absolute; width: 100%; height: 120px; top:0; left:0;}
+.bg{position: absolute; width: 100%; height: 120px; top:0; left:0; z-index: 3;}
 .btn-search {
     position: absolute;
     top:45px; right:45px;

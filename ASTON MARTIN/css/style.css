@@ -248,7 +248,7 @@ small {display:block; margin-bottom:20px;}
     .at2 h2 {font-size:25px; margin: 50px auto;}
     .at2 > .models > .row > li > a > span {font-size:12px; padding-left:15px;}
     .at2 > .models > .row > li > a > span i {font-size:20px;}
-    .at2 > .models > .row > li:last-child > {width:100%;}
+    .at2 > .models > .row > li:last-child  {width:100%;}
 
     .at3 { padding-top:50px;}
     .at3 h2 {font-size:25px; margin:100px auto;}
